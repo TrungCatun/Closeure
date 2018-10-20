@@ -34,8 +34,8 @@ class DetailViewController: UIViewController{
     var callBack: ((_ data: String) -> Void)?
     
     @IBAction func returnFirstValue(_ sender: UIButton) {
-        guard let backData = textFieldDVC.text else { return }
         
+        guard let backData = textFieldDVC.text else { return }
         callBack?(backData)
         
         navigationController?.popViewController(animated: true)
